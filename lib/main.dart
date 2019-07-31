@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'customIcons.dart';
 import 'data.dart';
 import 'dart:math';
-import 'a1.dart'
+import 'a1.dart';
 void main() => runApp(MaterialApp(
 
       home: MyApp(),
@@ -58,11 +58,7 @@ class _MyAppState extends State<MyApp> {
                         size: 30.0,
                       ),
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => a1()
-                         )
-                        );
+
                       },
                     ),
 
@@ -144,7 +140,9 @@ class _MyAppState extends State<MyApp> {
                         size: 12.0,
                         color: Colors.white,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+
+                      },
                     )
                   ],
                 ),
@@ -284,13 +282,17 @@ class CardScrollWidget extends StatelessWidget {
                                  //child: Text("Read Later",
                                    // style: TextStyle(color: Colors.white)),
                                 child: FlatButton(
-                                  onPressed: (){
-
-                                  },
                                   child: Text(
                                       'Watch Now',
                                       style: TextStyle(color:Colors.white)
                                   ),
+                                  onPressed: (){
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => a1())
+                                        );
+                                  },
+
                                 ),
                               ),
                             )
